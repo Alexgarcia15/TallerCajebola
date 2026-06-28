@@ -1,0 +1,22 @@
+body { font-family: sans-serif; background-color: #f4f7f6; padding: 15px; }
+.container { max-width: 450px; background: white; padding: 25px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin: auto; }
+
+/* Título en Rojo Intenso */
+.titulo-rojo { color: #ff0000 !important; text-align: center; font-weight: 900; text-transform: uppercase; }
+
+/* Instrucción en Rojo Intenso */
+.instruccion-roja { color: #ff0000 !important; font-weight: bold; display: block; margin-top: 15px; margin-bottom: 5px; }
+
+label { display: block; margin-top: 10px; font-weight: bold; font-size: 14px; }
+input, select { width: 100%; padding: 12px; margin-top: 5px; border: 2px solid #eee; border-radius: 10px; font-size: 16px; outline: none; }
+
+#lista-seleccionados { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; }
+.tag-servicio { background-color: #e6ffed; border: 1px solid #25d366; color: #0b6623; padding: 8px 12px; border-radius: 20px; font-size: 13px; font-weight: bold; display: flex; align-items: center; }
+.tag-servicio span { margin-left: 8px; cursor: pointer; color: #ff4d4d; font-size: 18px; }
+
+#cuadro-total { margin-top: 20px; padding: 15px; background: #222; color: #fff; text-align: center; font-size: 20px; font-weight: bold; border-radius: 10px; }
+
+/* Estilo para la pregunta antes del botón */
+.pregunta-final { text-align: center; font-weight: bold; color: #333; margin-top: 20px; font-size: 16px; }
+
+.btn-whatsapp { width: 100%; background-color: #25d366; color: white; border: none; padding: 15px; margin-top: 10px; border-radius: 10px; cursor: pointer; font-size: 17px; font-weight: bold; }

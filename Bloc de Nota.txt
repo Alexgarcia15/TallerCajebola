@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador Maestro Cajebola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="titulo-rojo">Taller Cajebola</h2>
+        
+        <label>Nombre del Cliente:</label>
+        <input type="text" id="nombre" placeholder="Nombre completo">
+
+        <label>Placa del Camión:</label>
+        <input type="text" id="placa" placeholder="Ej: L123456">
+
+        <label class="instruccion-roja">Toque para ver todos Los Servicios:</label>
+        <select id="selector-servicios" onchange="agregarServicio()">
+            <option value="">-- Seleccione aquí --</option>
+            <option value="5000">Reparación Motor R-600 - $5,000</option>
+            <option value="2500">Cambio de Aceite - $2,500</option>
+            <option value="1500">Revisión de Frenos - $1,500</option>
+            <option value="3000">Ajuste de Transmisión - $3,000</option>
+            <option value="1000">Chequeo Computarizado - $1,000</option>
+            <option value="4500">Mantenimiento Diferencial - $4,500</option>
+            <option value="2000">Alineación y Balanceo - $2,000</option>
+            <option value="800">Engrase General - $800</option>
+            <option value="3500">Limpieza de Inyectores - $3,500</option>
+            <option value="1200">Cambio de Filtro Aire - $1,200</option>
+            <option value="6000">Reparación de Turbo - $6,000</option>
+            <option value="2800">Sistema Eléctrico - $2,800</option>
+            <option value="1800">Carga de Aire Acond. - $1,800</option>
+            <option value="5500">Kit de Embrague (Clutch) - $5,500</option>
+            <option value="4000">Bomba de Agua - $4,000</option>
+            <option value="2200">Cambio de Bandas - $2,200</option>
+            <option value="3200">Ajuste de Válvulas - $3,200</option>
+            <option value="900">Rotación de Gomas - $900</option>
+            <option value="7500">Overhaul Parcial - $7,500</option>
+            <option value="1100">Escaneo de Sensores - $1,100</option>
+        </select>
+
+        <div id="lista-seleccionados"></div>
+
+        <div id="cuadro-total">Total: $0</div>
+
+        <p class="pregunta-final">¿Cuándo paso por allá maestro?</p>
+
+        <button class="btn-whatsapp" onclick="enviarWhatsApp()">Enviar Presupuesto por WhatsApp</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
