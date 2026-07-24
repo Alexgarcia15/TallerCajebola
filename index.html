@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
 
     <meta property="og:title" content="Taller Cajebola - Cotizador Digital">
-    <meta property="og:description" content="Organiza tu taller y envía presupuestos profesionales por WhatsApp en segundos.">
+    <meta property="og:description" content="Organiza tu taller y envÃ­a presupuestos profesionales por WhatsApp en segundos.">
     <meta property="og:image" content="Tu-Logo-64kb.png"> <meta property="og:url" content="https://tu-sitio.netlify.app">
 </head>
 <body>
     <div id="cotizador" class="container">
         <h2 class="titulo-rojo">Taller Cajebola</h2>
         
-        <label>Nombre del Dueño/Chofer:</label>
+        <label>Nombre del DueÃ±o/Chofer:</label>
         <input type="text" id="nombre" placeholder="Escriba aqui su nombre">
 
-        <label>Placa o Ficha del Camión:</label>
+        <label>Placa o Ficha del CamiÃ³n:</label>
         <input type="text" id="placa" placeholder="Ponga la placa aqui">
 
         <label>Falla que presenta (Opcional):</label>
@@ -27,17 +27,17 @@
         <label class="instruccion-roja">Toque para ver todos Los Servicios:</label>
         <select id="selector-servicios" onchange="agregarServicio()">
             <option value="">-- Seleccione el trabajo --</option>
-            <option value="15000">Reparación Motor R-600 - $15,000</option>
+            <option value="15000">ReparaciÃ³n Motor R-600 - $15,000</option>
             <option value="2500">Cambio de Aceite - $2,500</option>
             <option value="1500">Cambio de bandas - $1,500</option>
             
         
-            <option value="4500">Cambio de Piñon y Corona - $4,500</option>
+            <option value="4500">Cambio de PiÃ±on y Corona - $4,500</option>
            
             
             <option value="10500">Limpieza de Inyectores - $10,500</option>
            
-            <option value="10000">Reparación de Turbo - $10,000</option>
+            <option value="10000">ReparaciÃ³n de Turbo - $10,000</option>
             
           
             <option value="1500"> Graduar el clotche - $1,500</option>
@@ -52,37 +52,9 @@
         <div id="lista-seleccionados"></div>
         <div id="cuadro-total">Total Estimado: $0</div>
 
-        <p class="pregunta-final">¿Cuándo paso por allá maestro?</p>
-        <button class="btn-whatsapp" onclick="enviarWhatsApp()">Enviar Orden de Reparación</button>
+        <p class="pregunta-final">Â¿CuÃ¡ndo paso por allÃ¡ maestro?</p>
+        <button class="btn-whatsapp" onclick="enviarWhatsApp()">Enviar Orden de ReparaciÃ³n</button>
     </div>
-    <section class="precios-seccion">
-    <h2 class="titulo-planes">Elige el plan para tu Taller</h2>
-    <div class="planes-container">
-        <div class="plan">
-            <h3>Básico</h3>
-            <p class="precio">Gratis</p>
-            <ul>
-                <li>✅ Hasta 5 cotizaciones/mes</li>
-                <li>✅ 1 Usuario (Dueño)</li>
-                <li>❌ Sin Logo personalizado</li>
-            </ul>
-            <button id="btn-gratis" class="btn-plan">Empezar Gratis</button>
-        </div>
-
-        <div class="plan destacado">
-            <div class="recomendado">Más Popular</div>
-            <h3>Profesional</h3>
-            <p class="precio">$25<span>/mes</span></p>
-            <ul>
-                <li>✅ Cotizaciones Ilimitadas</li>
-                <li>✅ Tu Logo en los reportes</li>
-                <li>✅ Envío directo a WhatsApp</li>
-                <li>✅ Soporte 24/7</li>
-            </ul>
-            <button id="btnSuscribirPro" class="btn-plan btn-pro">Suscribirse Pro</button>
-        </div>
-    </div>
-</section>
     <script src="script.js"></script>
 </body>
 </html>
